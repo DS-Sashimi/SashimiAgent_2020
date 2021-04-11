@@ -6,6 +6,16 @@ public class SashimiRoleAssignPlayer extends AbstractRoleAssignPlayer {
     
     @Override
     public String getName() {
-        return null;
+        return "SashimiRoleAssignPlayer";
     }
+    
+    public SashimiRoleAssignPlayer() {
+        setVillagerPlayer(new SashimiPlayer());
+        setSeerPlayer(new SashimiPlayer());
+        setBodyguardPlayer(new SashimiPlayer());
+        setMediumPlayer(new SashimiPlayer());
+        setWerewolfPlayer(new SashimiPlayer());
+        setPossessedPlayer(new SashimiPlayer());
+    }
+    
 }
